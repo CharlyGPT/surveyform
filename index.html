@@ -1,1 +1,75 @@
-<h1>Survey form page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Survey Form</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<h1 id="title">Survey New Central Public Library</h1>
+		<p id="description">
+			We want to know your opinion about the new public library. 
+			</p>
+			<form id="survey-form">
+				<fieldset>
+					<label id="name-label" for="name">Name 
+						<input name="firstname" id="name" type="text" placeholder="Enter your name" required>
+						</label>
+					<label id="email-label" for="email">Email
+						<input name="mail" id="email" type="email" placeholder="Enter your email" required>
+					</label>
+					<label id="number-label" for="number">Age (optional)
+						<input name="numberAge" id="number" type="number" value="" placeholder="Age" min="10" max="99">
+					</label>
+					<label for="dropdown">What is your occupation?
+						<select id="dropdown" name="occupation">
+							<option value="">Select current occupation</option>
+							<option value="1">Student</option>
+							<option value="2">Employee</option>
+							<option value="3">Entrepreneur</option>
+							<option value="4">Prefer not to say</option>
+							<option value="5">Other</option>
+						</select>
+					</label>
+				</fieldset>
+				<fieldset>
+					<label>Do you think the new library will be very useful?
+					<label for="definitely" class="check"><input type="radio" name="useful" id="definitely" value="1" class="inline">Definitely</label>
+					<label for="not-sure" class="check"><input type="radio" name="useful" id="not-sure" value="2" class="inline">I'm not sure</label>
+					<label for="not-believe" class="check"><input type="radio" name="useful" id="not-believe" value="3" class="inline">I don't believe it</label>
+					</label>
+				</fieldset>
+				<fieldset>
+					<label for="select-one">What do you think will be its greatest attraction?
+					<select id="select-one" name="attraction">
+						<option value="">(Select an option)</option>
+						<option value="1">Its instalations</option>
+						<option value="2">Its digital content</option>
+						<option value="3">Its printed books</option>
+						<option value="4">Its location in the city</option>
+						</label>
+					</select>
+				</fieldset>
+				<fieldset>
+					<label>What actions do you think we can take to improve our service? (check all that apply)
+					<label for="blind-people" class="check"><input type="checkbox" id="blind-people" name="blind" value="1" class="inline">Adapt the facilities for blind people</label>
+					<label for="friendly-staff" class="check"><input type="checkbox" id="friendly-staff" name="staff" value="2" class="inline">Put friendly and helpful staff</label>
+					<label for="books-date" class="check"><input type="checkbox" id="books-date" name="books" value="3" class="inline">Keep books up to date</label>
+					<label for="opening-hours" class="check"><input type="checkbox" id="opening-hours" name="extend" value="4" class="inline">Extend opening hours</label>
+					<label for="quiet-environment" class="check"><input type="checkbox" id="quiet-environment" name="environment" value="5" class="inline">Maintain a neat and quiet environment</label>
+					<label for="wi-fi" class="check"><input type="checkbox" id="wi-fi" name="wifi" value="6" class="inline">Excellent Wi-Fi signal</label>
+					<label for="web-site" class="check"><input type="checkbox" id="web-site" name="website" value="7" class="inline">Have a website that helps users</label>
+					<label for="good-security" class="check"><input type="checkbox" id="good-security" name="security" value="8" class="inline">    Good security both inside and around the library</label>
+					<label for="lighting" class="check"><input type="checkbox" id="lighting" name="light" value="9" class="inline">Adequate lighting</label>
+					<label for="seat-tables" class="check"><input type="checkbox" id="seat-tables" name="seats" value="10" class="inline">Comfortable seats and tables</label>
+					<label for="cafeteria" class="check"><input type="checkbox" id="cafeteria" name="snacks" value="11" class="inline">A cafeteria for snacks</label>
+					</label>
+					<label for="comment" class="additional">Any additional comments or suggestions:
+					<textarea name="suggestions" placeholder="Enter your comment here..." id="comment" rows="8" cols="30"></textarea>
+					</label>
+				</fieldset>
+				<input type="submit" value="Submit" id="submit"/>
+			</form>
+	</body>
+</html>
